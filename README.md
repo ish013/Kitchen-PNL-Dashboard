@@ -1,4 +1,4 @@
-# Kitchen PNL Dashboard
+# cloud-kitchen-analytics-dashboard
 
 ## 🚀 LIVE DASHBOARD
 
