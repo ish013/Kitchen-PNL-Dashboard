@@ -26,12 +26,14 @@ def fmt_inr(val: float) -> str:
         return f"Rs {val / 1e5:,.2f} L"
     return f"Rs {val:,.0f}"
 
+def make_pivot_fmt(pivot, suffix=""):
 
-def make_pivot_fmt(pivot: pd.DataFrame, suffix: str = "%", decimals: int = 2) -> pd.DataFrame:
-    """
-    Format every numeric cell in a pivot table with a suffix string.
-    NaN cells become 'N/A'.
-    """
-    return pivot.applymap(
-        lambda x: f"{x:.{decimals}f}{suffix}" if pd.notna(x) else "N/A"
-    )
+    formatted_pivot = pivot.copy()
+
+    for col in formatted_pivot.columns:
+
+        formatted_pivot[col] = formatted_pivot[col].apply(
+            lambda x: f"{x:.2f}{suffix}" if pd.notnull(x) else ""
+        )
+
+    return formatted_pivot
