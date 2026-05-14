@@ -43,7 +43,7 @@ inject_css()
 #   a cron job / pipeline overwrites the file periodically.
 #   For a live database source, swap load_and_prepare() with a SQL query
 #   wrapped in the same decorator.
-DATA_PATH = "D:\Kitechen_Pnl\data\Kittchen PNL Data.xlsx"
+DATA_PATH = "data/Kittchen PNL Data.xlsx"
 
 
 @st.cache_data(ttl=300, show_spinner="Loading data ...")
