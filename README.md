@@ -2,7 +2,7 @@
 
 ## 🚀 LIVE DASHBOARD
 
-### 👉 **[CLICK HERE TO VIEW LIVE DASHBOARD](https://your-streamlit-link.streamlit.app)**
+### 👉 **[CLICK HERE TO VIEW LIVE DASHBOARD](https://kitchen-pnl-dashboard-9qln5dqb2sdrwyjqt23met.streamlit.app/)**
 
 ---
 
